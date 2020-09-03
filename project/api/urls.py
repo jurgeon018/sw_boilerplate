@@ -4,9 +4,13 @@ from rest_framework.routers import DefaultRouter
 
 
 
-router = DefaultRouter()
-# router.register('/', ViewSet)
-
 urlpatterns = [
-    path('', include(router.urls))
+    path('project_users/', ProjectUserListView.as_view()),
+    path('project_users/<pk>/', ProjectUserDetailView.as_view()),
+
 ]
+
+
+
+
+

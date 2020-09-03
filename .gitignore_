@@ -5,10 +5,11 @@ db.sqlite3
 venv/
 ENV/
 env/
-# media/
 
-/media/shop/item
-**/media/shop/item/**
+
+# media/
+# /media/shop/item
+# **/media/shop/item/**
 
 
 
@@ -29,9 +30,5 @@ __pycache__/
 static_root/
 
 node_modules
-package-lock.json
-package.json
-webpack.config.js
-
 
 

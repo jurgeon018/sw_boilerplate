@@ -1,0 +1,8 @@
+ssh jurgeon@<domain_name>
+69018
+cd /home/jurgeon/projects/<project>/
+source ./venv/bin/activate
+cd src 
+git pull origin master 
+python3 manage.py collectstatic --noinput 
+sudo service <project> restart 

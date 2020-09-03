@@ -1,9 +1,11 @@
 from django.contrib import admin
 from box.core.sw_auth.admin import BoxUserAdmin
-from project.models import ProjectUser 
+from project.models import * 
 
+
+
+@admin.register(ProjectUser)
 class ProjectUserAdmin(BoxUserAdmin):
-    pass 
+    search_fields = ['username']
 
 
-admin.site.register(ProjectUser, ProjectUserAdmin)

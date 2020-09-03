@@ -12,7 +12,7 @@ INSTALLED_APPS  = [
 ]
 AUTH_USER_MODEL = 'project.ProjectUser'
 TEMPLATES[0]['OPTIONS']['context_processors'].extend([
-    'project.context_processors.context',
+    # 'project.context_processors.context',
 ])
 MIDDLEWARE.extend([
     # 'project.middlewares.Middleware',
