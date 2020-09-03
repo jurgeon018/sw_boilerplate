@@ -1,12 +1,12 @@
 from .serializers import * 
 from rest_framework import generics
 
-class ProjectUserDetailView(generics.RetrieveUpdateDestroyApiView):
+class ProjectUserDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = ProjectUser.objects.all()
     serializer_class = ProjectUserSerializer
 
 
-class ProjectUserDetailView(generics.ListCreateApiView):
+class ProjectUserDetailView(generics.ListCreateAPIView):
     queryset = ProjectUser.objects.all()
     serializer_class = ProjectUserSerializer
 
