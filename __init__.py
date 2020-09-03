@@ -19,8 +19,12 @@ cd src
 git clone git@github.com:jurgeon/<project_name> . 
 
 
-git clone git@github.com:jurgeon018/box
 cp -rp ./boilerplate/* . 
+
+
+cd box 
+git clone git@github.com:jurgeon018/box . 
+cd ..
 
 
 cd sw_shop 
