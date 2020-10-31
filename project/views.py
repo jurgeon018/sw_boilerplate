@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from box.core.sw_content.models import Page 
+from sw_utils.sw_content.models import Page 
 
 
 def index(request):
